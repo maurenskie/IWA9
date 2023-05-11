@@ -1,0 +1,10 @@
+Here are the changes I made:
+
+I added a semicolon to the end of each statement, for consistency and to avoid potential issues with automatic semicolon insertion.
+I changed tax.913 to tax['913'], since property names in objects are strings, and numeric keys can't be accessed with the dot notation.
+I parsed the tax rate as a decimal using parseFloat() and divided it by 100 to get the decimal rate.
+I calculated the taxable amount by multiplying the salary by the decimal tax rate.
+I calculated the after-tax amount by subtracting the taxable amount from the salary.
+I interpolated the lodging and size variables to create the rent key, which I used to look up the rent amount in the rent object.
+I subtracted all expenses from the after-tax amount and rounded the final result to two decimal places using toFixed(2).
+This should log the expected result of 2658.05.
